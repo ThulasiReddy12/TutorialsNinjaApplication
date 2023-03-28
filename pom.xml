@@ -1,0 +1,67 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>DemoApplication</groupId>
+  <artifactId>TutorialsNinjaApplication</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <description>Practicing TestNG project</description>
+  <name>BlazeclanAutomationFramework</name>
+  <!-- FIXME change it to the project's website -->
+  <url>http://www.example.com</url>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <maven.compiler.source>1.7</maven.compiler.source>
+    <maven.compiler.target>1.7</maven.compiler.target>
+    <selenium-java-version>3.141.59</selenium-java-version>
+    <testng-version>7.6.1</testng-version>
+    <log4j-core-version>2.17.2</log4j-core-version>
+    <webDriverManager-version>5.2.3</webDriverManager-version>
+    <poi-ooxml-version>5.2.2</poi-ooxml-version>
+    <allure-testng-version>2.18.1</allure-testng-version>
+    <jakarta.mail-api-version>1.6.3</jakarta.mail-api-version>
+    <extentreports-version>5.0.9</extentreports-version>
+    <cucumber-java-version>7.6.0</cucumber-java-version>
+    <cucumber-testng-version>7.6.0</cucumber-testng-version>
+  </properties>
+
+  <dependencies>
+    <!-- https://mvnrepository.com/artifact/org.apache.poi/poi -->
+    <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-java -->
+    <dependency>
+      <groupId>io.cucumber</groupId>
+      <artifactId>cucumber-java</artifactId>
+      <version>${cucumber-java-version}</version>
+    </dependency>
+
+    <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-testng -->
+    <dependency>
+      <groupId>io.cucumber</groupId>
+      <artifactId>cucumber-testng</artifactId>
+      <version>${cucumber-testng-version}</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.apache.poi</groupId>
+      <artifactId>poi</artifactId>
+      <version>5.2.2</version>
+    </dependency>
+
+    <!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->
+    <dependency>
+      <groupId>org.projectlombok</groupId>
+      <artifactId>lombok</artifactId>
+      <version>1.18.24</version>
+      <scope>provided</scope>
+    </dependency>
+    <!-- https://mvnrepository.com/artifact/org.jsoup/jsoup -->
+    <dependency>
+      <groupId>org.jsoup</groupId>
+      <artifactId>jsoup</artifactId>
+      <version>1.15.2</version>
+    </dependency>
+  
+  </dependencies>
+  
+  
+  
+</project>
