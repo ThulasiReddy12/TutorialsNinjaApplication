@@ -5,14 +5,17 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Properties;
 
+
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 import com.aventstack.extentreports.reporter.configuration.Theme;
 
-public class Extentreports {
+import ApplicationBaeTest.BaseClass;
+
+public class ExtentRepoters extends BaseClass {
 	public static ExtentReports genrateExtentReport()   {
 		ExtentReports extentReport =new ExtentReports();
-		File extentReportFile=new File(System.getProperty("user.dir")+"\\test-output\\ExtentReports\\extentReport.html");
+		File extentReportFile=new File(System.getProperty("user.dir")+".//test-output/ExtentReports/extentReports.html");
 		ExtentHtmlReporter  html=new ExtentHtmlReporter(extentReportFile);
 		html.config().setTheme( Theme.DARK);
 		html.config().setReportName("Ninja Project Test Results");
@@ -20,7 +23,7 @@ public class Extentreports {
 		html.config().setTimeStampFormat("dd/MM/yyyy hh:mm:ss");
 		extentReport.attachReporter(html);
 		Properties congfigPro=new Properties();
-		File configPropFile=new File (System.getProperty("user.dir")+".//src/main/java/com/Ninja/Config/config.properties");
+		File configPropFile=new File (System.getProperty("user.dir")+".//src/test/java/config/config.properties");
 		
 		
 		try {
@@ -41,8 +44,8 @@ public class Extentreports {
 		return extentReport;
 				
 	}
+}
 
 
-	
-}	
+
 

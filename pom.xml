@@ -1,10 +1,14 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
+
   <groupId>DemoApplication</groupId>
   <artifactId>TutorialsNinjaApplication</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
-  <description>Practicing TestNG project</description>
+  <version>2.3.28</version>
   
+
   <name>BlazeclanAutomationFramework</name>
   <!-- FIXME change it to the project's website -->
   <url>http://www.example.com</url>
@@ -14,7 +18,7 @@
     <maven.compiler.source>1.7</maven.compiler.source>
     <maven.compiler.target>1.7</maven.compiler.target>
     <selenium-java-version>3.141.59</selenium-java-version>
-    <testng-version>7.6.1</testng-version>
+    <testng-version>7.4.0</testng-version>
     <log4j-core-version>2.17.2</log4j-core-version>
     <webDriverManager-version>5.2.3</webDriverManager-version>
     <poi-ooxml-version>5.2.2</poi-ooxml-version>
@@ -40,6 +44,20 @@
       <artifactId>cucumber-testng</artifactId>
       <version>${cucumber-testng-version}</version>
     </dependency>
+    
+    <!-- https://mvnrepository.com/artifact/org.freemarker/freemarker -->
+        <dependency>
+            <groupId>org.freemarker</groupId>
+            <artifactId>freemarker</artifactId>
+            <version>2.3.30</version>
+        </dependency>
+        
+        <!-- https://mvnrepository.com/artifact/com.aventstack/extentreports -->
+        <dependency>
+            <groupId>com.aventstack</groupId>
+            <artifactId>extentreports</artifactId>
+            <version>5.0.9</version>
+        </dependency>
 
     <dependency>
       <groupId>org.apache.poi</groupId>
@@ -54,6 +72,12 @@
       <version>1.18.24</version>
       <scope>provided</scope>
     </dependency>
+    <!--https://mvnrepository.com/artifact/com.relevantcodes/extentreports -->
+<dependency>
+	<groupId>com.relevantcodes</groupId>
+    <artifactId>extentreports</artifactId>
+	<version>2.41.2</version>
+</dependency>
     <!-- https://mvnrepository.com/artifact/org.jsoup/jsoup -->
     <dependency>
       <groupId>org.jsoup</groupId>
@@ -75,7 +99,12 @@
       <artifactId>selenium-java</artifactId>
       <version>${selenium-java-version}</version>
     </dependency>
-
+<dependency>
+			<groupId>log4j</groupId>
+			<artifactId>log4j</artifactId>
+			<version>1.2.17</version>
+		</dependency>
+  
     <!-- https://mvnrepository.com/artifact/net.masterthought/cucumber-reporting -->
     <dependency>
       <groupId>net.masterthought</groupId>
@@ -146,12 +175,10 @@
       <version>1.6.2</version>
     </dependency>
     <dependency>
-	<groupId>com.relevantcodes</groupId>
-    <artifactId>extentreports</artifactId>
-	<version>2.41.2</version>
-</dependency>
-    
-    
+			<groupId>log4j</groupId>
+			<artifactId>log4j</artifactId>
+			<version>1.2.17</version>
+		</dependency>
 
     <!-- https://mvnrepository.com/artifact/com.aventstack/extentreports -->
     <dependency>
@@ -229,5 +256,4 @@
       </plugin>
     </plugins>
   </build>
-  
 </project>

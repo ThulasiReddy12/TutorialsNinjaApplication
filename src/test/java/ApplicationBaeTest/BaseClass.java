@@ -7,6 +7,7 @@ import java.util.Properties;
 import java.util.Random;
 import java.util.concurrent.TimeUnit;
 
+import org.apache.log4j.xml.DOMConfigurator;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
@@ -27,6 +28,7 @@ public class BaseClass {
 	public static  Actions action;
 	@BeforeSuite
 	public static void launchApplication() throws Exception {
+		DOMConfigurator.configure("log4j.xml");
 		pro = new Properties();
 		File proFile = new File(System.getProperty("user.dir") + ".//src/test/java/config/config.properties");
 		dataPro = new Properties();
@@ -60,8 +62,8 @@ public class BaseClass {
 	}
 	driver.manage().window().maximize();
 	driver.manage().deleteAllCookies();
-	//driver.manage().timeouts().pageLoadTimeout(Utilities.PAGE_Load_TIME,TimeUnit.SECONDS);
-	//driver.manage().timeouts().implicitlyWait(Utilities.IMPLICIT_WAIT_TIME,TimeUnit.SECONDS);
+	driver.manage().timeouts().pageLoadTimeout(Utilities.PAGE_Load_TIME,TimeUnit.SECONDS);
+	driver.manage().timeouts().implicitlyWait(Utilities.IMPLICIT_WAIT_TIME,TimeUnit.SECONDS);
 	
 	driver.get("http://tutorialsninja.com/demo/");
 	Thread.sleep(2000);

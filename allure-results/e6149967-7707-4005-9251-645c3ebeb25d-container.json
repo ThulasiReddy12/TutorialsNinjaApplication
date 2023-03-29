@@ -1,0 +1,1 @@
+{"uuid":"e6149967-7707-4005-9251-645c3ebeb25d","name":"Suite","children":["e0c2f04e-e3ec-42c7-8949-6125dc1ba10f"],"befores":[{"name":"launchApplication","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1680090272656,"stop":1680090278763}],"afters":[],"start":1680090272630,"stop":1680090281714}
