@@ -1,25 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="2" total="6" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-03-29T17:37:29 IST" name="Suite" finished-at="2023-03-29T17:37:31 IST" duration-ms="1634">
+  <suite started-at="2023-04-01T23:03:26 IST" name="Suite" finished-at="2023-04-01T23:03:41 IST" duration-ms="15316">
     <groups>
     </groups>
-    <test started-at="2023-03-29T17:37:29 IST" name="Test" finished-at="2023-03-29T17:37:31 IST" duration-ms="1634">
+    <test started-at="2023-04-01T23:03:26 IST" name="Test" finished-at="2023-04-01T23:03:41 IST" duration-ms="15316">
+      <class name="TestCases.registrationpagetestcases">
+        <test-method signature="myaccountdropdownvalidation()[pri:0, instance:TestCases.registrationpagetestcases@58ce9668]" started-at="2023-04-01T23:03:27 IST" name="myaccountdropdownvalidation" finished-at="2023-04-01T23:03:28 IST" duration-ms="407" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- myaccountdropdownvalidation -->
+        <test-method signature="myregistrationvalidation()[pri:0, instance:TestCases.registrationpagetestcases@58ce9668]" started-at="2023-04-01T23:03:28 IST" name="myregistrationvalidation" finished-at="2023-04-01T23:03:30 IST" duration-ms="1710" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- myregistrationvalidation -->
+      </class> <!-- TestCases.registrationpagetestcases -->
       <class name="TestCases.NewTest">
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:TestCases.NewTest@1efe439d]" started-at="2023-03-29T17:37:23 IST" name="launchApplication" finished-at="2023-03-29T17:37:29 IST" duration-ms="6184" status="PASS">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:TestCases.NewTest@413f69cc]" started-at="2023-04-01T23:03:19 IST" name="launchApplication" finished-at="2023-04-01T23:03:26 IST" duration-ms="6501" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method signature="f()[pri:0, instance:TestCases.NewTest@1efe439d]" started-at="2023-03-29T17:37:30 IST" name="f" finished-at="2023-03-29T17:37:30 IST" duration-ms="578" status="PASS">
+        <test-method signature="f()[pri:0, instance:TestCases.NewTest@413f69cc]" started-at="2023-04-01T23:03:26 IST" name="f" finished-at="2023-04-01T23:03:27 IST" duration-ms="647" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- f -->
-        <test-method is-config="true" signature="closeApplication()[pri:0, instance:TestCases.NewTest@1efe439d]" started-at="2023-03-29T17:37:33 IST" name="closeApplication" finished-at="2023-03-29T17:37:34 IST" duration-ms="439" status="PASS">
+        <test-method is-config="true" signature="closeApplication()[pri:0, instance:TestCases.NewTest@413f69cc]" started-at="2023-04-01T23:03:44 IST" name="closeApplication" finished-at="2023-04-01T23:03:44 IST" duration-ms="297" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeApplication -->
       </class> <!-- TestCases.NewTest -->
+      <class name="TestCases.registrationpagedetailstestcases">
+        <test-method signature="registrationpagevalidation()[pri:0, instance:TestCases.registrationpagedetailstestcases@56673b2c]" started-at="2023-04-01T23:03:30 IST" name="registrationpagevalidation" finished-at="2023-04-01T23:03:41 IST" duration-ms="10889" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registrationpagevalidation -->
+      </class> <!-- TestCases.registrationpagedetailstestcases -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

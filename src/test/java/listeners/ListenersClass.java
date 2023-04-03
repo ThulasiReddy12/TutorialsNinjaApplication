@@ -35,12 +35,12 @@ public class ListenersClass extends ExtentRepoters  implements ITestListener{
 		extentTest.log(Status.INFO, testName+" "+"onTestStart");
 		
 		
-		try {
+	/*	try {
 			driver = (WebDriver)result.getTestClass().getRealClass().getDeclaredField("driver").get(result.getInstance());
 		} catch (IllegalArgumentException | IllegalAccessException | NoSuchFieldException | SecurityException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
-		}
+		}*/
 		File scrScreenshot=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
 		String destinationScreenshotPath =System.getProperty("user.dir")+"\\screenshots\\"+testName+".png";
 		try {
@@ -63,12 +63,12 @@ public class ListenersClass extends ExtentRepoters  implements ITestListener{
 		extentTest.log(Status.INFO, testName+" "+"onTestStart");
 		
 		
-		try {
-			driver = (WebDriver)result.getTestClass().getRealClass().getDeclaredField("driver").get(result.getInstance());
-		} catch (IllegalArgumentException | IllegalAccessException | NoSuchFieldException | SecurityException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+//		try {
+//			driver = (WebDriver)result.getTestClass().getRealClass().getDeclaredField("driver").get(result.getInstance());
+//		} catch (IllegalArgumentException | IllegalAccessException | NoSuchFieldException | SecurityException e) {
+//			// TODO Auto-generated catch block
+//			e.printStackTrace();
+//		}
 		File scrScreenshot=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
 		String destinationScreenshotPath =System.getProperty("user.dir")+"\\Screenshots\\"+testName+".png";
 		try {
@@ -92,12 +92,12 @@ public class ListenersClass extends ExtentRepoters  implements ITestListener{
 		extentTest.log(Status.INFO, testName+" "+"onTestStart");
 		
 		
-		try {
-			driver = (WebDriver)result.getTestClass().getRealClass().getDeclaredField("driver").get(result.getInstance());
-		} catch (IllegalArgumentException | IllegalAccessException | NoSuchFieldException | SecurityException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+//		try {
+//			driver = (WebDriver)result.getTestClass().getRealClass().getDeclaredField("driver").get(result.getInstance());
+//		} catch (IllegalArgumentException | IllegalAccessException | NoSuchFieldException | SecurityException e) {
+//			// TODO Auto-generated catch block
+//			e.printStackTrace();
+//		}
 		File scrScreenshot=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
 		String destinationScreenshotPath =System.getProperty("user.dir")+"\\Screenshots\\"+testName+".png";
 		try {
