@@ -10,5 +10,9 @@ public class NewTest extends BaseClass {
 	  String s= driver.getCurrentUrl();
 	  System.out.println(s);
 	  
+	 String str = driver.getTitle();
+	 System.out.println(str);
+	
   }
+  
 }

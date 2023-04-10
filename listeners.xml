@@ -9,9 +9,8 @@
   <test thread-count="5" name="Test">
   <classes>
   <class name="TestCases.NewTest"></class>
- <class name="TestCases.registrationpagetestcases"></class>
- <class name="TestCases.registrationpagedetailstestcases"></class>
- <class name="TestCases.nagativeScenarioTestcases"></class>
+ <class name="TestCases.CreateAccountPageTestcases"></class>
+ 
   </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

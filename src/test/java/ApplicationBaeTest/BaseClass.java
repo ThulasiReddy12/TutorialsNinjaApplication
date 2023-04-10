@@ -65,17 +65,17 @@ public class BaseClass {
 	driver.manage().timeouts().pageLoadTimeout(Utilities.PAGE_Load_TIME,TimeUnit.SECONDS);
 	driver.manage().timeouts().implicitlyWait(Utilities.IMPLICIT_WAIT_TIME,TimeUnit.SECONDS);
 	
-	driver.get("http://tutorialsninja.com/demo/");
+	driver.get("https://magento.softwaretestingboard.com/");
 	Thread.sleep(2000);
      action = new Actions(driver);
 
 	
 	}
 	
-	@AfterSuite
-	public static void closeApplication() {
-		driver.quit();
-	}
+	//@AfterSuite
+	//public static void closeApplication() {
+		//driver.quit();
+//	}
 	
 	
 	

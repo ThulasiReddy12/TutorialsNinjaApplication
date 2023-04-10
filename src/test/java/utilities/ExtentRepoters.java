@@ -18,7 +18,7 @@ public class ExtentRepoters extends BaseClass {
 		File extentReportFile=new File(System.getProperty("user.dir")+".//test-output/ExtentReports/extentReports.html");
 		ExtentHtmlReporter  html=new ExtentHtmlReporter(extentReportFile);
 		html.config().setTheme( Theme.DARK);
-		html.config().setReportName("Ninja Project Test Results");
+		html.config().setReportName("Luma Project Test Results");
 		html.config().setDocumentTitle("Project Test Results Report");
 		html.config().setTimeStampFormat("dd/MM/yyyy hh:mm:ss");
 		extentReport.attachReporter(html);
