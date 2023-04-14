@@ -16,6 +16,8 @@ public class SigninPage extends BaseClass{
 	By emailempty = By.xpath("//div[@id='email-error']");
 	By emailempty1 = By.xpath("//*[@id=\"email-error\"]");
 	By passwordempty1 = By.xpath("//*[@id=\"pass-error\"]");
+	By emailmistake = By.xpath("//*[@id=\"email-error\"]");
+	By passwordmistake = By.xpath("//*[@id=\"maincontent\"]/div[2]/div[2]/div/div/div");
 	public void signindropdown() {
 click(signin);
 	
@@ -30,6 +32,7 @@ click(signin);
 		//enterText(password1 ,dataPro.getProperty("password"));
 			//click(signinbutton);}
 public void emptyemail() {
+	//email empty
 	/*enterText(password1 ,dataPro.getProperty("password"));
 	click(signinbutton);
 	
@@ -40,16 +43,30 @@ public void emptyemail() {
 	Assert.assertTrue(actualMsg.contains(dataPro.getProperty("e1msg")));
 	
 	System.out.println(actualMsg);
+	//password empty
 	enterText( email1,dataPro.getProperty("email"));
 	click(signinbutton);
 
 	String actualMsg=Xpath(passwordempty).getText();
 	System.out.println(actualMsg);
+	//both email and password empty
 	click(signinbutton);
 	String actualMsg=Xpath(emailempty1).getText();
 	System.out.println(actualMsg);
 	String actualMsg1=Xpath( passwordempty1).getText();
 	System.out.println(actualMsg1);*/
-	
+	//wrong email(without giving @ symbol)
+	//driver.findElement( email1).sendKeys("thulasi111gmail.com");
+	//driver.findElement( password1).sendKeys("reddy@123");
+	//click(signinbutton);
+
+	//String actualMsg=Xpath(emailmistake).getText();
+	//System.out.println(actualMsg);
+	//wrong password(withoutgiving 3)
+	driver.findElement( email1).sendKeys("thulasi111@gmail.com");
+	driver.findElement( password1).sendKeys("reddy@12");
+	click(signinbutton);
+	String actualMsg=Xpath(passwordmistake).getText();
+	System.out.println(actualMsg);
 }
 }

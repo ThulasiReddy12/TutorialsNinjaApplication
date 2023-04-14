@@ -17,7 +17,13 @@ public static final int IMPLICIT_WAIT_TIME = 10;
 		return email;
 
 	}
+	public static String invalidrandom_EmailID() {
+		Date date = new Date();
+		String num = date.toString().replace(" ", "_").replace(":", "_");
+		String email = "shilpa" + num + "@gmail.com";
+		return email;
+
 	}
-	
+}
 
 
