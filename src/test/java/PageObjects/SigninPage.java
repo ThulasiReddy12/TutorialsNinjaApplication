@@ -44,11 +44,12 @@ public void emptyemail() {
 	click(signinbutton);
 
 	String actualMsg=Xpath(passwordempty).getText();
-	System.out.println(actualMsg);*/
+	System.out.println(actualMsg);
 	click(signinbutton);
 	String actualMsg=Xpath(emailempty1).getText();
 	System.out.println(actualMsg);
 	String actualMsg1=Xpath( passwordempty1).getText();
-	System.out.println(actualMsg1);
+	System.out.println(actualMsg1);*/
+	
 }
 }
