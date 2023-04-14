@@ -10,7 +10,8 @@
   <classes>
   <class name="TestCases.NewTest"></class>
  <class name="TestCases.CreateAccountPageTestcases"></class>
- 
+  <class name="TestCases.SignoutTestcases"></class>
+  <class name="TestCases.SigninPageTestcases"></class>
   </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

@@ -8,7 +8,9 @@ import java.util.Random;
 import java.util.concurrent.TimeUnit;
 
 import org.apache.log4j.xml.DOMConfigurator;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.interactions.Actions;
@@ -68,9 +70,31 @@ public class BaseClass {
 	driver.get("https://magento.softwaretestingboard.com/");
 	Thread.sleep(2000);
      action = new Actions(driver);
-
-	
 	}
+	public static  WebElement Xpath(By Xpath) {
+		return driver.findElement(Xpath);
+	}
+	public static void enterText(By Xpath,String text) {
+		driver.findElement(Xpath).click();
+		driver.findElement(Xpath).clear();
+		driver.findElement(Xpath).sendKeys(text);
+	}
+	public static String getText(By Xpath) {
+		return driver.findElement(Xpath).getText();
+	}
+	public static void click(By Xpath) {
+		driver.findElement(Xpath).click();
+	}
+	public static void clear(By Xpath) {
+		driver.findElement(Xpath).clear();
+	}
+	public static void getAttribute(By Xpath,String getText) {
+		driver.findElement(Xpath).getAttribute(getText);
+	}
+	public String getURL() {
+		return driver.getCurrentUrl();
+	}
+	
 	
 	//@AfterSuite
 	//public static void closeApplication() {

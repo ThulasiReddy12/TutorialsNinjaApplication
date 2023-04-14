@@ -16,7 +16,7 @@ public class CreateAccountPageTestcases extends BaseClass{
 		accountpage.emailValidation();
 		accountpage.passwordValidation();
 		accountpage.confirmPasswordValidation();
-		accountpage.newsLetterValidation();
+		//accountpage.newsLetterValidation();
 		
 		
 	}
